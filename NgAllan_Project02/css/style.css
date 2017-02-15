@@ -1,0 +1,19 @@
+body{
+    font-family: sans-serif;
+    line-height: 1.8em;   
+}
+
+.container{
+    width:960px;
+    margin: 50px auto;
+    padding:30px;
+    background-color: #eee;
+    border:groove;
+    border-radius:25px;
+    border-width:3px;
+    border-color:#7fd1a1;
+}
+
+p{
+    color:#232323;
+}
