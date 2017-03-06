@@ -1,6 +1,21 @@
+@font-face{
+    font-family: 'DiplomataSC-Regular';
+    src:url('../fonts/Diplomata_SC/DiplomataSC-Regular.ttf');
+}
+
 body{
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
+    margin:0;
+    padding:0;
+}
+
+img{
+    width:100%;
+}
+
+h2{
+    font-family: 'DiplomataSC-Regular', serif;
 }
 
 ul.top-nav{
@@ -22,30 +37,29 @@ ul.top-nav li.icon {
 
 @media only screen and (max-width: 680px) {
     ul.top-nav li{
-        display:none;
+        display: none;
     }
-    ul.top-nav li.icon{
-    display:inline-block;
-    float:right;
+    ul.top-nav li.icon {
+        display: inline-block;
+        float: right;
     }
 }
-
-@media only screen and (max-width:680px){
+@media only screen and (max-width: 680px) {
     ul.top-nav.responsive {
         position:relative;
     }
-    ul.top-nav.responsive li.icon {
+    ul.top-nav.responsive li.icon{
         position:absolute;
         right:0;
         top:0;
     }
     ul.top-nav.responsive li{
-    float:none;
-    display:inline;
+        float:none;
+        display: inline;
     }
     ul.top-nav.responsive li a{
-        display:block;
-        text-align:left;
+        display: block;
+        text-align: left;
     }
 }
 
