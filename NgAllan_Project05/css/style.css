@@ -1,0 +1,123 @@
+@font-face{
+    font-family: 'DiplomataSC-Regular';
+    src:url('../fonts/Diplomata_SC/DiplomataSC-Regular.ttf');
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    margin:0;
+    padding:0;
+}
+
+img{
+    width:100%;
+}
+
+.artist #portrait{
+    width:80%;
+    margin:0 auto;
+    padding:0.5%;
+    border:double black;
+}
+
+h1{
+    font-family: 'DiplomataSC-Regular', serif;
+    text-align:center;
+}
+
+h2{
+    font-family: 'DiplomataSC-Regular', serif;
+    padding-left:10%;
+}
+
+p{
+    padding-left:10%;
+    padding-right:10%;
+}
+
+.contact_list li{
+    list-style-type:none;
+    display:inline-block;
+    padding:5%;
+    width:20%;
+    height:10%;
+}
+
+ul.top-nav{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color: #525252;
+}
+
+ul.top-nav li{
+    float:left;
+    margin: 0 2.5% 0 5%;
+}
+
+ul.top-nav li.icon {
+    display: none;
+}
+
+@media only screen and (max-width: 680px) {
+    ul.top-nav li{
+        display: none;
+    }
+    ul.top-nav li.icon {
+        display: inline-block;
+        float: right;
+    }
+}
+@media only screen and (max-width: 680px) {
+    ul.top-nav.responsive {
+        position:relative;
+    }
+    ul.top-nav.responsive li.icon{
+        position:absolute;
+        right:0;
+        top:0;
+    }
+    ul.top-nav.responsive li{
+        float:none;
+        display: inline;
+    }
+    ul.top-nav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 320px){
+    body{
+        background-color: #ffcc66;
+    }
+}
+
+@media only screen and (min-width: 480px){
+    body{
+        background-color: #33ccff;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    body{
+        background-color: #cc66ff;
+    }
+}
+
+@media only screen and (min-width: 1020px){
+    body{
+        background-color: #9933aa;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    body{
+        background-color: #000;
+    }
+    h1, p{
+        color: #fff;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Artist Profile Page</title>
+            <link rel="stylesheet" href="css/style.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+        </head>
+        <body>
+            <div class="container">
+                <nav>
+                    <ul class="top-nav" id="my-top-nav">
+                        <li><a class="active" href="#home">home</a></li>
+                        <li><a href="#works">works</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#contact">contact</a></li>
+                        <li class="icon"><a href="javascript:void(0);" style="font-size:2.25em;" onclick="myFunction()">&#9776;</a></li>
+                    </ul>
+                </nav>
+                <div class="artist">
+                    <h1>Ai Wei Wei</h1>
+                    <div id="portrait">
+                        <img src="images/ai-wei-wei/ai-wei-wei_portrait.jpg" alt="ai-wei-wei's portrait">
+                    </div> <!-- portrait -->
+                </div><!-- artist -->
+                <div class="quote">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, ipsam aut error ad optio commodi eaque nisi, rem, ex aspernatur dolor ipsum. Voluptate accusantium maiores doloribus eaque amet architecto sapiente?</p>
+                </div> <!-- quote -->
+                <div class="slideshow">
+                    <img class="mySlides" src="images/ai-wei-wei/ai-wei-wei_bang.jpg" alt="ai-wei-wei-bang">
+                </div>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati doloremque aliquam molestias in explicabo pariatur veritatis cupiditate, quasi nihil adipisci ullam vel quaerat modi sapiente magni tempore eveniet, voluptas maxime!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, quod neque nesciunt quo at rerum voluptas, commodi maiores deleniti eos facere reiciendis eligendi, ipsum unde odit ullam. Earum, et, enim?</p>
+                </div> <!-- info -->
+                <div class="slideshow">
+                    <img src="images/ai-wei-wei/ai-wei-wei_colored-vases-01.jpg" alt="ai-wei-wei's colored vase 1">
+                </div>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis laboriosam neque quibusdam illo ipsum odit doloremque facere, deleniti, ratione magnam tempore quis ducimus, enim perferendis sint aliquam quod! Eius, mollitia.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, ipsam doloremque, nostrum recusandae autem dolorum perferendis explicabo consequuntur rerum architecto, ex commodi. Dolorem, totam maxime saepe illo, quas expedita sit.</p>
+                </div><!-- info -->
+            </div> <!-- container -->
+            
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("my-top-nav");
+                    if (x.className === "top-nav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "top-nav";
+                    }
+                }
+            </script> <!-- nav script -->
+        </body>
+    </html>
