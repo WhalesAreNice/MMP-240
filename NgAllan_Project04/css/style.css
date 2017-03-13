@@ -14,8 +14,27 @@ img{
     width:100%;
 }
 
+h1{
+    font-family: 'DiplomataSC-Regular', serif;
+    text-align:center;
+}
+
 h2{
     font-family: 'DiplomataSC-Regular', serif;
+    padding-left:10%;
+}
+
+p{
+    padding-left:10%;
+    padding-right:10%;
+}
+
+.contact_list li{
+    list-style-type:none;
+    display:inline-block;
+    padding:5%;
+    width:20%;
+    height:10%;
 }
 
 ul.top-nav{
