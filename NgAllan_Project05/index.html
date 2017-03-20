@@ -7,6 +7,42 @@
             <!-- responsive: meta tag viewport should make all of our site pages work on all devices and screen sizes -->
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+            <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+            <script src="jquery.slides.min.js"></script>
+            <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+            <script src="js/jquery.slides.min.js"></script>
+            <script>
+                $(function(){
+                  $("#slides").slidesjs({
+                    width: 940,
+                    height: 528
+                  });
+                });
+            </script>
+            
+            <script>
+                $(function(){
+                  $("#slides").slidesjs({
+                    play: {
+                      active: true,
+                        // [boolean] Generate the play and stop buttons.
+                        // You cannot use your own buttons. Sorry.
+                      effect: "slide",
+                        // [string] Can be either "slide" or "fade".
+                      interval: 2000,
+                        // [number] Time spent on each slide in milliseconds.
+                      auto: false,
+                        // [boolean] Start playing the slideshow on load.
+                      swap: true,
+                        // [boolean] show/hide stop and play buttons
+                      pauseOnHover: false,
+                        // [boolean] pause a playing slideshow on hover
+                      restartDelay: 2000
+                        // [number] restart delay on inactive slideshow
+                    }
+                  });
+                });
+            </script>
         </head>
         <body>
             <div class="container">
@@ -17,39 +53,54 @@
                 </header>
                 <nav>
                     <ul class="top-nav" id="my-top-nav">
-                        <li><a class="active" href="#home">home</a></li>
-                        <li><a href="#works">works</a></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#contact">contact</a></li>
+                        <li><a class="active" href="#home">Home</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
                         <li class="icon"><a href="javascript:void(0);" style="font-size:2.25em;" onclick="myFunction()">&#9776;</a></li>
                     </ul>
                 </nav>
-                <div class="slideshow">
-                    <h1>Art Gallery</h1>
-                    <img src="http://placehold.it/600x900" alt="placeholder image">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div> <!-- slideshow -->
+                <h1>The Others In Art</h1>
+                <div id="slides">
+                    <img src="images/ai-wei-wei/ai-wei-wei_bang.jpg" alt="ai-wei-wei-bang">
+                    <img src="images/ai-wei-wei/ai-wei-wei_bicycles-taiwan-absent.jpg" alt="bicycles-taiwan-absent">
+                    <img src="images/ai-wei-wei/ai-wei-wei_colored-vases-01.jpg" alt="vase">
+                    <img src="images/ai-wei-wei/ai-wei-wei_crabs.jpg" alt="crabs">
+                </div> <!-- slides -->
+                <div class="about_site">
+                   <h2>Introduction</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis delectus iusto odio sapiente explicabo cupiditate dolorum, veniam tempora corporis vitae quae facilis alias fugit ut doloribus molestias, accusamus praesentium atque.</p>
+                </div>
+            
+                <h1>Featured Artists</h1>
                 <div class="section1">
-                <img src="http://placehold.it/600x600" alt="placeholder image">
-                    <h2>Section 1</h2>
+                <img src="images/ai-wei-wei/ai-wei-wei_portrait.jpg" alt="Ai Wei Wei's portrait">
+                    <h2>Ai Wei Wei</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nobis dolorem eum ipsa saepe consequatur explicabo unde, esse veritatis accusantium, porro voluptatum earum temporibus asperiores sapiente facilis debitis quaerat voluptate.</p>
                 </div> <!-- section1 -->
                 <div class="section2">
-                    <img src="http://placehold.it/600x600" alt="placeholder image">
-                    <h2>Section 2</h2>
+                    <img src="images/alma-thomas/portrait.jpg" alt="Alma Thomas's portrait">
+                    <h2>Alma Thomas</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit explicabo magni, accusantium ducimus neque maiores illo molestias, vero consequuntur corrupti alias ut quia praesentium. Fugit voluptatibus, non assumenda vero error?</p>
                 </div> <!-- section2 -->
+                <div class="section3">
+                    <img src="images/ana-mendieta/ana-mendieta-portrait.jpg" alt="Ana Mendieta's portrait">
+                    <h2>Ana Mendieta</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit explicabo magni, accusantium ducimus neque maiores illo molestias, vero consequuntur corrupti alias ut quia praesentium. Fugit voluptatibus, non assumenda vero error?</p>
+                </div> <!-- section3 -->
+                <div class="section4">
+                    <img src="images/carrie-mae-weems/carrie-mae-weems-portrait-of-a-woman-who-has-fallen-from-grace.jpg" alt="Carrie Mae Weems' portrait">
+                    <h2>Carrie Mae Weems</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit explicabo magni, accusantium ducimus neque maiores illo molestias, vero consequuntur corrupti alias ut quia praesentium. Fugit voluptatibus, non assumenda vero error?</p>
+                </div> <!-- section4 -->
                 <div class="contacts">
                     <ul class="contact_list">
-                        <li><a href="#">contact 1</a></li>
-                        <li><a href="#">contact 2</a></li>
-                        <li><a href="#">contact 3</a></li>
-                        <li><a href="#">contact 4</a></li>
-                        <li><a href="#">contact 5</a></li>
-                        <li><a href="#">contact 6</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Youtube</a></li>
                     </ul>
                 </div> <!-- contacts -->
             </div> <!-- container -->
@@ -64,6 +115,8 @@
                     }
                 }
             </script>
+            
+            
             
         </body>
     </html>
