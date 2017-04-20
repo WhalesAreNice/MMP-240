@@ -21,7 +21,8 @@ img{
 .artist #portrait{
     width:80%;
     margin:0 auto;
-    padding:0.5%;
+    padding:1%;
+    padding-bottom:0;
     border:double black;
 }
 
