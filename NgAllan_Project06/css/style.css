@@ -178,6 +178,42 @@ ul.top-nav li.icon {
     .col-sm-3 h2{
         font-size:1em;
     }
+    
+    .artist {
+        width:70%;
+    }
+    
+    .artist{
+        margin:0 auto;
+        
+    }
+    
+    .slideshow {
+        float:right;
+        margin-right:2%;
+    }
+    
+    .slideshow {
+        margin-top:3%;
+    }
+    
+    .part1 .info{
+        float:right;
+        margin-right:2.5%;
+    }
+    
+    .part1{
+        float:right;
+        width:48%;
+    }
+    
+    .part2{
+        float:left;
+        width:48%;
+        margin-left:2%;
+    }
+    
+    
 }
 
 @media only screen and (min-width: 900px){
@@ -212,24 +248,8 @@ ul.top-nav li.icon {
         color:#B22222;
     }
     
-    .artist, .slideshow, .info, .info2 {
-        width:45%;
-    }
     
-    .artist, .info2{
-        float:left;
-        margin-left:2.5%;
-        
-    }
     
-    .slideshow, .info {
-        float:right;
-        margin-right:2.5%;
-    }
-    
-    .slideshow {
-        margin-top:3%;
-    }
     
 }
 
